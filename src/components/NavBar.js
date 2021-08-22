@@ -1,38 +1,32 @@
-import React, { useState } from 'react'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import React from 'react'
+import { Navbar, Nav } from 'react-bootstrap'
 import { Routes } from './../routes'
 
 function NavBar() {
-    return (
-        <Navbar bg="light" variant="light" expand="lg" fixed="top">
-            <Navbar.Brand 
-                href={Routes.Home.path}
-                className='d-flex justify-content-center align-items-center'
-                style={{ fontSize: 22, marginLeft: 10, backgroundColor: 'red', 
-                    fontFamily: '-apple-system, .SFNSText-Regular, San Francisco, Roboto, Segoe UI, Helvetica Neue, Lucida Grande, Arial,sans-serif'
-                }}
-            >
+    return (        
+        <Navbar bg='light' variant='light' expand='lg' fixed='top' style={{ padding: '20px 0 20px' }}>
+            <Navbar.Brand href={Routes.Home.path} style={{ marginLeft: 50, marginRight: 50, fontWeight: 'bold', fontSize: 22 }}>
                 Steven Jiang
             </Navbar.Brand>
 
-            <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-hamburger" />
+            <Navbar.Toggle aria-controls='basic-navbar-nav' className='navbar-hamburger' />
 
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Link
-                        className="navLinks"
-                        href={Routes.Home.path}
-                        // style={{ paddingLeft: !isLarge && 20, backgroundColor: pathname === '/' && '#262626' }}
-                    >
-                        Home
+            <Navbar.Collapse id='basic-navbar-nav'>
+                <Nav as='ul'>
+                    <Nav.Link href={Routes.Resume.path} as='li'>
+                        <a href='/resume'>Resume</a>
                     </Nav.Link>
 
-                    <Nav.Link 
-                        className="navLinks"
-                        href={Routes.Home.path}
-                        // style={{ paddingLeft: !isLarge && 20, backgroundColor: pathname === Routes.PlanningHome.path && '#262626' }}
-                    >
-                        Planning
+                    <Nav.Link href={Routes.Experience.path} as='li'>
+                        <a href='/experience'>Experience</a>
+                    </Nav.Link>
+
+                    <Nav.Link href={Routes.Papers.path} as='li'>
+                        <a href='/papers'>Papers</a>
+                    </Nav.Link>
+
+                    <Nav.Link href={Routes.Photos.path} as='li'>
+                        <a href='/photos'>Photos</a>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
