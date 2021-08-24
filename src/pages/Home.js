@@ -16,8 +16,8 @@ function Home() {
     return (
         <div style={{ marginLeft: 50, marginRight: 50 }}>
             <Row xl={2} lg={2} md={2} sm={1} xs={1} style={{  }}>
-                <Col className='d-flex' xl={4} lg={4} md={4} sm={12} xs={12} style={{ flexDirection: 'column' }}>
-                    <Image src={Me} roundedCircle style={{ width: '60%' }} />
+                <Col className='d-flex' xl={4} lg={4} md={4} style={{ flexDirection: 'column', backgroundColor: 'green' }}>
+                    <Image src={'https://via.placeholder.com/150'} roundedCircle style={{ width: '60%' }} />
                     <h1 className='myname'>Steven Jiang</h1>
                     <p>Masters student at Rowan University</p>
                     <p>
@@ -37,7 +37,7 @@ function Home() {
                         <a href='https://www.linkedin.com/in/jiangsteven99/' target='_blank' rel='noreferrer' style={{ all: 'revert', color: 'black' }}>LinkedIn</a>
                     </p>
                 </Col>
-                <Col xl={8} lg={8} md={8} sm={12} xs={12} style={{ backgroundColor: 'orange' }}>
+                <Col xl={8} lg={8} md={8} style={{ backgroundColor: 'orange' }}>
                     About Me
                 </Col>
             </Row>
