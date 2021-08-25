@@ -1,2 +1,7 @@
 @import './navbar.scss';
 @import './home.scss';
+
+::selection {
+    background: #434343;
+    color: white;
+}

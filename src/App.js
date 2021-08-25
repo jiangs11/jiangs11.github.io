@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Routes } from './routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-image-lightbox/style.css'
 import './scss/index.scss'
 
 import Home from './pages/Home'
@@ -35,9 +36,10 @@ const StandardRoute = ({ component: Component, ...rest }) => {
             render={props => (
                 <>
                     <NavBar />
-                    <div style={{ height: 100 }} />
+                    <div style={{ height: 130 }} />
                     <Component {...props} />
-                    {/* <Footer /> */}
+                    <div style={{ height: 30 }} />
+                    <Footer />
                 </>
             )}
         />

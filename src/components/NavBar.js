@@ -1,11 +1,16 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
+import { useMediaQuery } from 'react-responsive'
 import { Routes } from './../routes'
 
 function NavBar() {
+    const isMobile = useMediaQuery({
+        query: '(max-width: 576px)'
+    })
+
     return (
         <Navbar bg='light' variant='light' expand='lg' fixed='top' style={{ padding: '20px 0 20px' }}>
-            <Navbar.Brand href={Routes.Home.path} style={{ marginLeft: 50, marginRight: 50, fontWeight: 'bold', fontSize: 22 }}>
+            <Navbar.Brand href={Routes.Home.path} style={{ marginLeft: isMobile ? 15 : 50, marginRight: !isMobile && 50, fontWeight: 'bold', fontSize: 22 }}>
                 Steven Jiang
             </Navbar.Brand>
 

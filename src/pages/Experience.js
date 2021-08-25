@@ -1,22 +1,110 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, ListGroup } from 'react-bootstrap'
+import { useMediaQuery } from 'react-responsive'
+import IconButton from '../components/IconButton'
 
 function Experience() {
+    const isLarge = useMediaQuery({
+        query: '(min-width: 992px)'
+    })
+
+    const isMobile = useMediaQuery({
+        query: '(max-width: 576px)'
+    })
+
+    const styles = {
+        headerStyle: {
+            textAlign: 'center',
+            fontFamily: 'Montserrat, sans-serif',
+            textDecorationLine: 'underline',
+            fontSize: 42,
+        },
+        listItemStyle: {
+            paddingTop: isMobile ? 40 : 30,
+            paddingRight: 30,
+            paddingBottom: isMobile ? 40 : 30,
+            paddingLeft: 30,
+        },
+        titleStyle: {
+            fontFamily: 'Nunito, sans-serif',
+            fontWeight: 'bold',
+            fontSize: 34,
+        },
+        locationStyle: {
+            fontSize: 20,
+            fontFamily: 'Roboto, sans-serif',
+        },
+        descriptionStyle: {
+            fontFamily: 'Montserrat, sans-serif',
+            all: 'revert',
+            lineHeight: 1.8,
+            fontSize: 20,
+            clear: 'both',
+        },
+        dateStyle: {
+            fontSize: 22,
+            fontFamily: 'Sora, sans-serif',
+            marginBottom: isLarge && 30,
+            color: 'gray',
+        },
+        linkStyle: {
+            marginBottom: 20,
+            clear: 'left',
+            float: 'left',
+            marginLeft: 0,
+        }
+    }
+
     return (
         <div>
-            { experience.map((item, index) => {
-                return (
-                    <Row key={index}>
-                        <Col>
-                        
-                        </Col>
+            <h1 style={styles.headerStyle}>Work Experience</h1>
 
-                        <Col>
-                        
-                        </Col>
-                    </Row>
+            <ListGroup variant='flush'>
+            { experience.map((item, index) => {
+                const { title, location, date, description, keywords, links } = item
+
+                return (
+                    <ListGroup.Item style={styles.listItemStyle}>
+                        <Row key={index} style={{ padding: !isMobile && 25 }}>
+                            <Col xl={8} lg={8} md={12} sm={12} xs={12}>
+                                <h2 style={styles.titleStyle}>{ title }</h2>
+
+                                <p style={styles.locationStyle}>{ location }</p>
+                                <p className='d-block d-sm-block d-md-block d-lg-none d-xl-none' style={styles.dateStyle}>{ date }</p>
+
+                                { links?.map((link, i) => (
+                                    <a key={i} className='d-block d-sm-block d-md-block d-lg-none d-xl-none' href={link.hrefLink} target='_blank' rel='noreferrer' style={styles.linkStyle}>{ link.nameLink }</a>
+                                ))}
+                                
+                                <ul style={styles.descriptionStyle}>
+                                    { description.map((point, i) => (
+                                        <li key={i} style={{ all: 'revert' }}>
+                                            { point }
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <div className='d-flex' style={{ flexDirection: isMobile ? 'column' : 'row', clear: 'both' }}>
+                                    { keywords.map((keyword, i) => (
+                                        <IconButton key={i} iconName={keyword} />
+                                    ))}
+                                </div>
+                            </Col>
+
+                            <Col xl={4} lg={4} className='d-none d-lg-block'>
+                                <div className='d-flex justify-content-center align-items-center' style={{ flexDirection: 'column' }}>
+                                    <p style={styles.dateStyle}>{ date }</p>
+
+                                    { links?.map((link, i) => (
+                                        <a href={link.hrefLink} target='_blank' rel='noreferrer' style={{ marginBottom: 20 }}>{ link.nameLink }</a>
+                                    ))}
+                                </div>
+                            </Col>
+                        </Row>
+                    </ListGroup.Item>
                 )
             })}
+            </ListGroup>
         </div>
     )
 }
@@ -27,19 +115,19 @@ const experience = [
         location: 'Rowan University, Glassboro, NJ',
         date: 'June 2021 - Present',
         description: [
-            'Designing and implementing a full stack web app to provide information on electric vehicles and to help multi-unit dwelling complex owners plan costs on installing ev chargers.',
+            'Designing and implementing a web-based online tool to provide information on electric vehicles and to help multi-unit dwelling complex owners plan costs on installing ev chargers.',
         ],
         keywords: [
             'MySQL',
-            'Express',
-            'React',
+            'ExpressJS',
+            'ReactJS',
             'NodeJS'
         ],
-        images: [
-            
-        ],
         links: [
-
+            {
+                'nameLink': 'Website Link',
+                'hrefLink': 'https://rowan-mud.herokuapp.com/'
+            }
         ]
     },
     {
@@ -57,11 +145,15 @@ const experience = [
             'Agile',
             'SAAS'
         ],
-        images: [
-            
-        ],
         links: [
-
+            {
+                'nameLink': 'Company Link',
+                'hrefLink': 'https://www.arkeaeronautics.com/'
+            },
+            {
+                'nameLink': 'FAA Challenge Video',
+                'hrefLink': 'https://livestream.com/viewnow/faachallenge'
+            }
         ]
     },
     {
@@ -69,20 +161,24 @@ const experience = [
         location: 'FuturFits',
         date: 'June 2020 - September 2020',
         description: [
-            'Built a Web Application and Chrome Extension that allows users to save their favorite products during e-commerce shopping.',
+            'Built a web application and Chrome extension that allows users to save their favorite products during e-commerce shopping.',
             'Specific duties I worked on was modeling the application database, building the RESTful API using Express, as well as the Chrome Extension UI.',
         ],
         keywords: [
             'MongoDB',
-            'Express',
-            'React',
+            'ExpressJS',
+            'ReactJS',
             'NodeJS'
         ],
-        images: [
-            
-        ],
         links: [
-            
+            {
+                'nameLink': 'Website Link',
+                'hrefLink': 'http://www.futurfits.com/'
+            },
+            {
+                'nameLink': 'Chrome Extension Link',
+                'hrefLink': 'https://chrome.google.com/webstore/detail/futurfits/lbijjbmhbdcmgohdcppmpgamaopncbig?hl=en-US'
+            }
         ]
     },
     {
@@ -92,16 +188,18 @@ const experience = [
         description: [
             'Undergraduate research collaboration with Bristol-Myers Squibb.',
             'Researched efficient ways of visualizing, pre-processing, and downsampling very large metabolomics data, specifically liquid chromatography - mass spectrometry.',
-            'Built UI with Python library, Mayavi, that results in a seamless user interaction with the data.'
+            'Built UI with Python library, Mayavi, that results in a seamless user interaction with such large quantity of data.'
         ],
         keywords: [
             'Python',
-            'Mayavi',
             'Bioinformatics',
             'Research'
         ],
-        images: [
-            
+        links: [
+            {
+                'nameLink': 'GitHub Link',
+                'hrefLink': 'https://github.com/jiangs11/LCMS-Data-Visualization'
+            }
         ]
     },
     {
@@ -114,12 +212,15 @@ const experience = [
             'Helped answer student questions in various computer science courses on topics such as object-oriented programming and data structures.'
         ],
         keywords: [
-            'Communication',
-            'Problem Solving',
-            'Engaging'
+            'Data Structures',
+            'Algorithms',
+            'Java'
         ],
-        images: [
-            
+        links: [
+            {
+                'nameLink': 'Department Link',
+                'hrefLink': 'https://csm.rowan.edu/departments/cs/index.html'
+            }
         ]
     }
 ]

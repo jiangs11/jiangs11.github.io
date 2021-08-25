@@ -2,8 +2,8 @@ import React from 'react'
 import { Row, Col, Image } from 'react-bootstrap'
 import { MdLocationOn, MdEmail } from 'react-icons/md'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import Me from './../assets/me.jpg'
-import Tennessee from './../assets/tennessee.jpeg'
+// import Me from './../assets/me.jpg'
+// import Tennessee from './../assets/tennessee.jpeg'
 
 function Home() {
     const iconSize = 30
@@ -18,7 +18,7 @@ function Home() {
             <Row xl={2} lg={2} md={2} sm={1} xs={1} style={{  }}>
                 <Col className='d-flex' xl={4} lg={4} md={4} style={{ flexDirection: 'column', backgroundColor: 'green' }}>
                     <Image src={'https://via.placeholder.com/150'} roundedCircle style={{ width: '60%' }} />
-                    <h1 className='myname'>Steven Jiang</h1>
+                    <h1 className='myname'>Steven Jiang 江巍</h1>
                     <p>Masters student at Rowan University</p>
                     <p>
                         <MdLocationOn size={iconSize} style={styles.iconStyle} />
@@ -30,11 +30,11 @@ function Home() {
                     </p>
                     <p>
                         <FaGithub size={iconSize} style={styles.iconStyle} />
-                        <a href='https://github.com/jiangs11' target='_blank' rel='noreferrer' style={{ all: 'revert', color: 'black' }}>GitHub</a>
+                        <a href='https://github.com/jiangs11' target='_blank' rel='noreferrer' style={{ color: 'black' }}>GitHub</a>
                     </p>
                     <p>
                         <FaLinkedin size={iconSize} style={styles.iconStyle} />
-                        <a href='https://www.linkedin.com/in/jiangsteven99/' target='_blank' rel='noreferrer' style={{ all: 'revert', color: 'black' }}>LinkedIn</a>
+                        <a href='https://www.linkedin.com/in/jiangsteven99/' target='_blank' rel='noreferrer' style={{ color: 'black' }}>LinkedIn</a>
                     </p>
                 </Col>
                 <Col xl={8} lg={8} md={8} style={{ backgroundColor: 'orange' }}>
