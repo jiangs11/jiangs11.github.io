@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
+import ThemeToggle from './ThemeToggle'
 import { Routes } from './../routes'
 
 function NavBar() {
@@ -33,7 +34,9 @@ function NavBar() {
                     <Nav.Link href={Routes.Photos.path} as='li'>
                         <a href='/photos'>Photos</a>
                     </Nav.Link>
+
                 </Nav>
+                {/* <ThemeToggle /> */}
             </Navbar.Collapse>
         </Navbar>
     )

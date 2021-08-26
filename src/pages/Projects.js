@@ -167,27 +167,6 @@ const projects = [
         ]
     },
     {
-        title: 'Course Scheduler',
-        location: 'Software Engineering @ Rowan University',
-        date: 'January 2020 - May 2020',
-        description: [
-            'Undergraduate Software Engineering semester project.',
-            'Developed a program that will help the Computer Science department head with automating parts of the scheduling process.',
-            'Maintained a database of CS courses with their semester schedule and created a UI within Microsoft Excel to allow for efficient scheduling.'
-        ],
-        keywords: [
-            'C#',
-            'MySQL',
-            'MS Excel',
-        ],
-        links: [
-            {
-                'nameLink': 'GitHub Link',
-                'hrefLink': 'https://github.com/jiangs11/Course-Scheduler-Project'
-            }
-        ]
-    },
-    {
         title: 'Image Captioning',
         location: 'Machine Learning @ Rowan University',
         date: 'September 2020 - December 2020',
@@ -226,6 +205,27 @@ const projects = [
             {
                 'nameLink': 'GitHub Link',
                 'hrefLink': 'https://github.com/jiangs11/Neo4J-Pandemic'
+            }
+        ]
+    },
+    {
+        title: 'Course Scheduler',
+        location: 'Software Engineering @ Rowan University',
+        date: 'January 2020 - May 2020',
+        description: [
+            'Undergraduate Software Engineering semester project.',
+            'Developed a program that will help the Computer Science department head with automating parts of the scheduling process.',
+            'Maintained a database of CS courses with their semester schedule and created a UI within Microsoft Excel to allow for efficient scheduling.'
+        ],
+        keywords: [
+            'C#',
+            'MySQL',
+            'MS Excel',
+        ],
+        links: [
+            {
+                'nameLink': 'GitHub Link',
+                'hrefLink': 'https://github.com/jiangs11/Course-Scheduler-Project'
             }
         ]
     }

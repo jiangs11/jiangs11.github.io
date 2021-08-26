@@ -174,7 +174,7 @@ function IconButton({ iconName }) {
                 )
             case 'Flask':
                 return (
-                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#9e9e9e' }, styles.buttonStyle)}>
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#383838' }, styles.buttonStyle)}>
                         <span className='d-flex justify-content-center align-items-center'>
                             <Flask size={iconSize} style={styles.iconStyle} />
                             Flask
