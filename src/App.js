@@ -15,7 +15,6 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
 function App() {
-    console.log('public url: ', process.env)
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <Switch>

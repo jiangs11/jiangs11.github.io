@@ -1,11 +1,12 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
-import { FaNodeJs as NodeJS, FaReact, FaMobileAlt as Mobile, FaPython as Python, FaDatabase as Data, FaSortAmountUpAlt as Algorithms, FaJava as Java } from 'react-icons/fa'
+import { FaNodeJs as NodeJS, FaReact, FaMobileAlt as Mobile, FaPython as Python, FaDatabase as Data, FaSortAmountUpAlt as Algorithms, FaJava as Java, FaRegFileExcel as Excel } from 'react-icons/fa'
 import { FcBiotech } from 'react-icons/fc'
-import { GiArchiveResearch as Research, GiWaterfall as Waterfall } from 'react-icons/gi'
+import { GiArchiveResearch as Research, GiWaterfall as Waterfall, GiArtificialIntelligence as MachineLearning } from 'react-icons/gi'
 import { GrMysql as MySQL, GrCloudSoftware as Software } from 'react-icons/gr'
-import { SiMongodb as MongoDB, SiJavascript as Javascript } from 'react-icons/si'
+import { RiVirusLine as Virus } from 'react-icons/ri'
+import { SiMongodb as MongoDB, SiJavascript as Javascript, SiFlask as Flask, SiTypescript as TypeScript, SiNeo4J as Neo4J, SiDotNet as CSharp } from 'react-icons/si'
 
 function IconButton({ iconName }) {
     const isMobile = useMediaQuery({
@@ -159,6 +160,69 @@ function IconButton({ iconName }) {
                         <span className='d-flex justify-content-center align-items-center'>
                             <Algorithms size={iconSize} style={styles.iconStyle} />
                             Algorithms
+                        </span>
+                    </Button>
+                )
+            case 'Machine Learning':
+                return (
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#4cd974' }, styles.buttonStyle)}>
+                        <span className='d-flex justify-content-center align-items-center'>
+                            <MachineLearning size={iconSize} style={styles.iconStyle} />
+                            Machine Learning
+                        </span>
+                    </Button>
+                )
+            case 'Flask':
+                return (
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#9e9e9e' }, styles.buttonStyle)}>
+                        <span className='d-flex justify-content-center align-items-center'>
+                            <Flask size={iconSize} style={styles.iconStyle} />
+                            Flask
+                        </span>
+                    </Button>
+                )
+            case 'TypeScript':
+                return (
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#007acc' }, styles.buttonStyle)}>
+                        <span className='d-flex justify-content-center align-items-center'>
+                            <TypeScript size={iconSize} style={styles.iconStyle} />
+                            TypeScript
+                        </span>
+                    </Button>
+                )
+            case 'C#':
+                return (
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#9b4993' }, styles.buttonStyle)}>
+                        <span className='d-flex justify-content-center align-items-center'>
+                            <CSharp size={iconSize} style={styles.iconStyle} />
+                            C#
+                        </span>
+                    </Button>
+                )
+            case 'MS Excel':
+                return (
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#1D6F42' }, styles.buttonStyle)}>
+                        <span className='d-flex justify-content-center align-items-center'>
+                            <Excel size={iconSize} style={styles.iconStyle} />
+                            MS Excel
+                        </span>
+                    </Button>
+                )
+            case 'Neo4J':
+                return (
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#018bff' }, styles.buttonStyle)}>
+                        <span className='d-flex justify-content-center align-items-center'>
+                            <Neo4J size={iconSize} style={styles.iconStyle} />
+                            Neo4J
+                        </span>
+                    </Button>
+                )
+            case 'Simulation':
+                return (
+                    <Button id='iconButtons' disabled style={Object.assign({ backgroundColor: '#de1b21' }, styles.buttonStyle)}>
+                        <span className='d-flex justify-content-center align-items-center'>
+                            <Virus size={iconSize} style={styles.iconStyle} />
+                            Simulation
                         </span>
                     </Button>
                 )

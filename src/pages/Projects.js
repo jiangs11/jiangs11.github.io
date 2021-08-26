@@ -120,10 +120,12 @@ const projects = [
         location: 'Hackathon @ Rowan University',
         date: 'March 6-7, 2021',
         description: [
-            ''
+            'Attended Rowan University\'s 6th Annual 24-hour Hackathon.',
+            'Built a neural style transfer network that takes the art styles of two images and combines them.',
+            'Paired with a React frontend that allows users to mix and match images to see awesome (or weird) output art pieces.'
         ],
         keywords: [
-            'React',
+            'ReactJS',
             'Python',
             'Machine Learning'
         ],
@@ -133,9 +135,8 @@ const projects = [
                 'hrefLink': 'https://github.com/jiangs11/ProfHacks2021'
             },
             {
-                'nameLink': 'Website Link',
-                'hrefLink': 'https://jiangs11.github.io/ProfHacks2021/',
-                'misc': ''
+                'nameLink': 'Video Demo Submission',
+                'hrefLink': 'https://youtu.be/tHq31yAq3hU'
             }
         ]
     },
@@ -144,23 +145,24 @@ const projects = [
         location: 'Senior Project @ Rowan University',
         date: 'September 2020 - December 2020',
         description: [
-            ''
+            'Undergraduate Senior Project (Capstone) semester project.',
+            'Developed an interactive web app where users can post errands/jobs for others to complete and earn money.',
+            'Users can interact with a map to discover tasks near them and a filtering system to only display interested tasks.'
         ],
         keywords: [
             'MySQL',
             'Flask',
-            'React',
-            'Typescript'
+            'ReactJS',
+            'TypeScript'
         ],
         links: [
             {
                 'nameLink': 'GitHub Link',
-                'hrefLink': 'https://github.com/jiangs11/Senior-Project-F20',
-                'misc': 'Private due to API keys'
+                'hrefLink': 'https://github.com/jiangs11/Senior-Project-F20'
             },
             {
                 'nameLink': 'Video Demo',
-                'hrefLink': 'https://www.youtube.com/watch?v=bv3de-OYx8I&ab_channel=anttesoriero'
+                'hrefLink': 'https://youtu.be/bv3de-OYx8I'
             }
         ]
     },
@@ -169,7 +171,9 @@ const projects = [
         location: 'Software Engineering @ Rowan University',
         date: 'January 2020 - May 2020',
         description: [
-            ''
+            'Undergraduate Software Engineering semester project.',
+            'Developed a program that will help the Computer Science department head with automating parts of the scheduling process.',
+            'Maintained a database of CS courses with their semester schedule and created a UI within Microsoft Excel to allow for efficient scheduling.'
         ],
         keywords: [
             'C#',
@@ -188,9 +192,9 @@ const projects = [
         location: 'Machine Learning @ Rowan University',
         date: 'September 2020 - December 2020',
         description: [
-            'Undergraduate research collaboration with Bristol-Myers Squibb.',
-            'Researched efficient ways of visualizing, pre-processing, and downsampling very large metabolomics data, specifically liquid chromatography - mass spectrometry.',
-            'Built UI with Python library, Mayavi, that results in a seamless user interaction with such large quantity of data.'
+            'Undergraduate Machine Learning semester project.',
+            'Given an image as input, the goal is to generate a short one-sentence caption describing the objects and/or actions in the image.',
+            'Utilized the MS-COCO dataset and Tensorflow for the neural network setup. Inception V3 was used for feature extraction while a GRU with the attention mechanism was used as the decoding RNN.'
         ],
         keywords: [
             'Python',
@@ -199,8 +203,8 @@ const projects = [
         ],
         links: [
             {
-                'nameLink': 'GitHub Link',
-                'hrefLink': 'https://github.com/jiangs11/LCMS-Data-Visualization'
+                'nameLink': 'Paper Link',
+                'hrefLink': process.env.PUBLIC_URL + '/Jiang_ML_FinalReport.pdf'
             }
         ]
     },
@@ -217,10 +221,6 @@ const projects = [
             'Java',
             'Neo4J',
             'Simulation'
-        ],
-        images: [
-            'https://raw.githubusercontent.com/jiangs11/Neo4J-Pandemic/main/NeoScreenshots/8d82863891a5270f303ab3d8052cdb7b.png',
-            ''
         ],
         links: [
             {
