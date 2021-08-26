@@ -47,11 +47,16 @@ function Experience() {
             marginBottom: isLarge && 30,
             color: 'gray',
         },
-        linkStyle: {
+        mobileLinkStyle: {
             marginBottom: 20,
             clear: 'left',
             float: 'left',
             marginLeft: 0,
+        },
+        regularLinkStyle: {
+            marginBottom: 20,
+            clear: 'right',
+            float: 'right',
         }
     }
 
@@ -73,7 +78,7 @@ function Experience() {
                                 <p className='d-block d-sm-block d-md-block d-lg-none d-xl-none' style={styles.dateStyle}>{ date }</p>
 
                                 { links?.map((link, i) => (
-                                    <a key={i} className='d-block d-sm-block d-md-block d-lg-none d-xl-none' href={link.hrefLink} target='_blank' rel='noreferrer' style={styles.linkStyle}>{ link.nameLink }</a>
+                                    <a key={i} className='d-block d-sm-block d-md-block d-lg-none d-xl-none' href={link.hrefLink} target='_blank' rel='noreferrer' style={styles.mobileLinkStyle}>{ link.nameLink }</a>
                                 ))}
                                 
                                 <ul style={styles.descriptionStyle}>
@@ -84,21 +89,21 @@ function Experience() {
                                     ))}
                                 </ul>
 
-                                <div className='d-flex' style={{ flexDirection: isMobile ? 'column' : 'row', clear: 'both' }}>
-                                    { keywords.map((keyword, i) => (
-                                        <IconButton key={i} iconName={keyword} />
-                                    ))}
+                                <div className='d-none d-sm-block' style={{ clear: 'both' }}>
+                                    <div className='d-flex' style={{ flexDirection: 'row' }}>
+                                        { keywords.map((keyword, i) => (
+                                            <IconButton key={i} iconName={keyword} />
+                                        ))}
+                                    </div>
                                 </div>
                             </Col>
 
-                            <Col xl={4} lg={4} className='d-none d-lg-block'>
-                                <div className='d-flex justify-content-center align-items-center' style={{ flexDirection: 'column' }}>
-                                    <p style={styles.dateStyle}>{ date }</p>
+                            <Col xl={4} lg={4} className='d-none d-lg-block d-flex justify-content-center align-items-center' style={{ flexDirection: 'column', textAlign: 'right' }}>
+                                <p style={styles.dateStyle}>{ date }</p>
 
-                                    { links?.map((link, i) => (
-                                        <a href={link.hrefLink} target='_blank' rel='noreferrer' style={{ marginBottom: 20 }}>{ link.nameLink }</a>
-                                    ))}
-                                </div>
+                                { links?.map((link, i) => (
+                                    <a key={i} href={link.hrefLink} target='_blank' rel='noreferrer' style={styles.regularLinkStyle}>{ link.nameLink }</a>
+                                ))}
                             </Col>
                         </Row>
                     </ListGroup.Item>

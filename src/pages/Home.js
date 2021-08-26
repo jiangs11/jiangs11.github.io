@@ -18,7 +18,7 @@ function Home() {
             <Row xl={2} lg={2} md={2} sm={1} xs={1} style={{  }}>
                 <Col className='d-flex' xl={4} lg={4} md={4} style={{ flexDirection: 'column', backgroundColor: 'green' }}>
                     <Image src={'https://via.placeholder.com/150'} roundedCircle style={{ width: '60%' }} />
-                    <h1 className='myname'>Steven Jiang 江巍</h1>
+                    <h1 className='myname'>Steven Jiang</h1>
                     <p>Masters student at Rowan University</p>
                     <p>
                         <MdLocationOn size={iconSize} style={styles.iconStyle} />
