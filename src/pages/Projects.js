@@ -226,6 +226,10 @@ const projects = [
             {
                 'nameLink': 'GitHub Link',
                 'hrefLink': 'https://github.com/jiangs11/Course-Scheduler-Project'
+            },
+            {
+                'nameLink': 'Design Document',
+                'hrefLink': process.env.PUBLIC_URL + '/Jiang_DesignDocument.pdf'
             }
         ]
     }
