@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Routes } from './routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-image-lightbox/style.css'
@@ -15,17 +15,18 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
 function App() {
+    console.log('public url: ', process.env)
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Router basename={process.env.PUBLIC_URL}>
             <Switch>
                 <StandardRoute exact path={Routes.Home.path} component={Home} />
                 <StandardRoute exact path={Routes.Experience.path} component={Experience} />
                 <StandardRoute exact path={Routes.Projects.path} component={Projects} />
                 <StandardRoute exact path={Routes.Photos.path} component={Photos} />
 
-                <Route path='*' component={Error404} />
+                <Route component={Error404} />
             </Switch>
-        </BrowserRouter>
+        </Router>
     )
 }
 
