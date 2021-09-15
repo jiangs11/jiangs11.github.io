@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
-import ThemeToggle from './ThemeToggle'
+// import ThemeToggle from './ThemeToggle'
 import { Routes } from './../routes'
 
 function NavBar() {

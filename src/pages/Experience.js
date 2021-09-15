@@ -142,7 +142,7 @@ const experience = [
         description: [
             'Built a cross-platform iOS/Android mobile app to assist first responders from the moment a call arrives to the site of the emergency.',
             'Some notable features of this app are push notifications to alert users when calls/alarms come in and a map interface that not only provides navigation to the site of emergency, but also various metadata such as floor plans for a building (if applicable) near the site.',
-            'Daily scrum meetings ensure communication is present in a remote environment and all members of the entire team are in sync.'
+            'Daily scrum meetings ensure communication is present in a remote and agile environment so that all members of the entire team are in sync and productive.'
         ],
         keywords: [
             'React Native',
@@ -153,11 +153,15 @@ const experience = [
         links: [
             {
                 'nameLink': 'Company Link',
-                'hrefLink': 'https://www.arkeaeronautics.com/'
+                'hrefLink': 'https://www.linkedin.com/company/arkeaeronautics/about/'
             },
             {
                 'nameLink': 'FAA Challenge Video',
                 'hrefLink': 'https://livestream.com/viewnow/faachallenge'
+            },
+            {
+                'nameLink': 'App Store Link',
+                'hrefLink': 'https://apps.apple.com/us/app/arkemobile/id1571373102'
             }
         ]
     },
@@ -166,8 +170,9 @@ const experience = [
         location: 'FuturFits',
         date: 'June 2020 - September 2020',
         description: [
+            'Helped early-stage startup by taking their product idea and bringing it to life.',
             'Built a web application and Chrome extension that allows users to save their favorite products during e-commerce shopping.',
-            'Specific duties I worked on was modeling the application database, building the RESTful API using Express, as well as the Chrome Extension UI.',
+            'Specific duties I worked on was modeling the application database, building the RESTful API using Express, as well as the Chrome Extension UI.'
         ],
         keywords: [
             'MongoDB',

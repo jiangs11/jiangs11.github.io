@@ -137,6 +137,10 @@ const projects = [
             {
                 'nameLink': 'Video Demo Submission',
                 'hrefLink': 'https://youtu.be/tHq31yAq3hU'
+            },
+            {
+                'nameLink': 'Website Link',
+                'hrefLink': 'https://jiangs11.github.io/ProfHacks2021/'
             }
         ]
     },
@@ -157,12 +161,16 @@ const projects = [
         ],
         links: [
             {
-                'nameLink': 'GitHub Link',
+                'nameLink': 'GitHub Link (private)',
                 'hrefLink': 'https://github.com/jiangs11/Senior-Project-F20'
             },
             {
                 'nameLink': 'Video Demo',
                 'hrefLink': 'https://youtu.be/bv3de-OYx8I'
+            },
+            {
+                'nameLink': 'Design Document',
+                'hrefLink': process.env.PUBLIC_URL + '/OddJobs_DesignDocument.pdf'
             }
         ]
     },
@@ -229,7 +237,7 @@ const projects = [
             },
             {
                 'nameLink': 'Design Document',
-                'hrefLink': process.env.PUBLIC_URL + '/Jiang_DesignDocument.pdf'
+                'hrefLink': process.env.PUBLIC_URL + '/SWENG_DesignDocument.pdf'
             }
         ]
     }
