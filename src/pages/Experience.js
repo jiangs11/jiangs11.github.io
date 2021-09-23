@@ -166,7 +166,7 @@ const experience = [
         ]
     },
     {
-        title: 'Full Stack Intern',
+        title: 'Full Stack Developer Intern',
         location: 'FuturFits',
         date: 'June 2020 - September 2020',
         description: [

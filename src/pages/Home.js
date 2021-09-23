@@ -16,10 +16,10 @@ function Home() {
     return (
         <div style={{ marginLeft: 50, marginRight: 50 }}>
             <Row xl={2} lg={2} md={2} sm={1} xs={1} style={{  }}>
-                <Col className='d-flex' xl={4} lg={4} md={4} style={{ flexDirection: 'column', backgroundColor: 'green' }}>
+                <Col className='d-flex' xl={4} lg={4} md={4} style={{ flexDirection: 'column', backgroundColor: 'white' }}>
                     <Image src={'https://via.placeholder.com/150'} roundedCircle style={{ width: '60%' }} />
                     <h1 className='myname'>Steven Jiang</h1>
-                    <p>Masters student at Rowan University</p>
+                    <p>Master's student at Rowan University</p>
                     <p>
                         <MdLocationOn size={iconSize} style={styles.iconStyle} />
                         Glassboro, New Jersey
@@ -30,15 +30,17 @@ function Home() {
                     </p>
                     <p>
                         <FaGithub size={iconSize} style={styles.iconStyle} />
-                        <a href='https://github.com/jiangs11' target='_blank' rel='noreferrer' style={{ color: 'black' }}>GitHub</a>
+                        <a href='https://github.com/jiangs11' target='_blank' rel='noreferrer' style={{ float: 'left' }}>
+                            GitHub
+                        </a>
                     </p>
                     <p>
                         <FaLinkedin size={iconSize} style={styles.iconStyle} />
                         <a href='https://www.linkedin.com/in/jiangsteven99/' target='_blank' rel='noreferrer' style={{ color: 'black' }}>LinkedIn</a>
                     </p>
                 </Col>
-                <Col xl={8} lg={8} md={8} style={{ backgroundColor: 'orange' }}>
-                    About Me
+                <Col xl={8} lg={8} md={8} style={{ backgroundColor: 'white' }}>
+                    <p style={{ fontSize: 30 }}>UNDER DEVELOPMENT</p>
                 </Col>
             </Row>
         </div>

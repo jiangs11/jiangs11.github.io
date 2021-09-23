@@ -135,7 +135,7 @@ const projects = [
                 'hrefLink': 'https://github.com/jiangs11/ProfHacks2021'
             },
             {
-                'nameLink': 'Video Demo Submission',
+                'nameLink': 'Video Demo',
                 'hrefLink': 'https://youtu.be/tHq31yAq3hU'
             },
             {
