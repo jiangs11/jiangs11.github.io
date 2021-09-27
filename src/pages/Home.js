@@ -40,7 +40,7 @@ function Home() {
                     </p>
                 </Col>
                 <Col xl={8} lg={8} md={8} style={{ backgroundColor: 'white' }}>
-                    <p style={{ fontSize: 30 }}>UNDER DEVELOPMENT</p>
+                    <p style={{ fontSize: 30 }}>UNDER DEVELOPMENT!!</p>
                 </Col>
             </Row>
         </div>
