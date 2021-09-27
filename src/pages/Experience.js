@@ -152,8 +152,8 @@ const experience = [
         ],
         links: [
             {
-                'nameLink': 'Company Link',
-                'hrefLink': 'https://www.linkedin.com/company/arkeaeronautics/about/'
+                'nameLink': 'Website Link',
+                'hrefLink': 'https://www.arkelive.com/'
             },
             {
                 'nameLink': 'FAA Challenge Video',

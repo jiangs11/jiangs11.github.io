@@ -121,8 +121,8 @@ const projects = [
         date: 'March 6-7, 2021',
         description: [
             'Attended Rowan University\'s 6th Annual 24-hour Hackathon.',
-            'Built a neural style transfer network that takes the art styles of two images and combines them.',
-            'Paired with a React frontend that allows users to mix and match images to see awesome (or weird) output art pieces.'
+            'Built a neural style transfer network that takes the art styles of two images and combines them. Image segmentation was also incorporated to apply one style to the foreground object and another style to the background.',
+            'Paired with a React frontend that allows users to mix and match images to generate awesome (or weird) output art pieces.'
         ],
         keywords: [
             'ReactJS',
@@ -151,7 +151,8 @@ const projects = [
         description: [
             'Undergraduate Senior Project (Capstone) semester project.',
             'Developed an interactive web app where users can post errands/jobs for others to complete and earn money.',
-            'Users can interact with a map to discover tasks near them and a filtering system to only display interested tasks.'
+            'Users can interact with a map to discover tasks near them and a filtering system to only display interested tasks.',
+            'Helped on both ends of the tech stack.'
         ],
         keywords: [
             'MySQL',
@@ -222,8 +223,8 @@ const projects = [
         date: 'January 2020 - May 2020',
         description: [
             'Undergraduate Software Engineering semester project.',
-            'Developed a program that will help the Computer Science department head with automating parts of the scheduling process.',
-            'Maintained a database of CS courses with their semester schedule and created a UI within Microsoft Excel to allow for efficient scheduling.'
+            'Developed a plug-in MS Excel program that will help the Computer Science department head with automating parts of the scheduling process.',
+            'Maintained a database of CS courses with their semester schedule and created a UI within MS Excel to allow for efficient scheduling.'
         ],
         keywords: [
             'C#',
