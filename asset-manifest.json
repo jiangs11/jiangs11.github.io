@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/static/js/main.e8814979.js",
+    "static/media/favicon.gif": "/static/media/favicon.5c0ef7e6ce3477bb7767.gif",
+    "index.html": "/index.html",
+    "main.e8814979.js.map": "/static/js/main.e8814979.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e8814979.js"
+  ]
+}
