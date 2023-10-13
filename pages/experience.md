@@ -13,8 +13,9 @@ Mount Laurel, New Jersey
 
 📅 _December 2021 - Present_
 
--   Working on various government funded and commercial projects.
--   TODO: Update with some projects I've worked on
+-   Working on various government-funded and commercial contracts to design, develop, and deliver optimal solutions to our customers.
+-   Develop and integrate new software features into complex, full-functional, automated test systems.
+-   Communicate with subject matter experts to design large test case scenarios leading to increased test runs.
 
 &nbsp;
 
@@ -69,3 +70,6 @@ Glassboro, New Jersey
 📅 _July 2019 - January 2020_
 
 -   Collaborated with BMS to research efficient ways of visualizing, pre-processing, and downsampling very large metabolomics data, specifically liquid chromatography - mass spectrometry.
+-   [GitHub Repository](https://github.com/jiangs11/LCMS-Data-Visualization)
+
+&nbsp;
