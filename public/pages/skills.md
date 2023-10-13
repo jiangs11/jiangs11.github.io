@@ -11,7 +11,7 @@
 -   Java
 -   Python
     -   Flask
--   JavaScript/TypeScript
+-   JavaScript / TypeScript
     -   Node.js
     -   React
 
@@ -49,3 +49,5 @@
 -   Work Management
 -   Communication
 -   Adaptability
+
+&nbsp;

@@ -106,12 +106,6 @@ export default function MDContainer({ path }: Props) {
             .then((text) => setContent(text));
     }, [path]);
 
-    useEffect(() => {
-        let title = pathname.substring(1, pathname.length);
-        title = title[0].toUpperCase() + title.substring(1);
-        document.title = `${process.env.REACT_APP_NAME!} | ${title}`;
-    }, [pathname]);
-
     return (
         <Container>
             <ReactMarkdown
