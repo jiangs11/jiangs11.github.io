@@ -18,14 +18,9 @@ interface Props {
 }
 
 export default function Home({ setSelectedIndex }: Props) {
-    const { pathname } = useLocation();
     useEffect(() => {
         setSelectedIndex(-1);
     }, [setSelectedIndex]);
-
-    useEffect(() => {
-        document.title = process.env.REACT_APP_NAME!;
-    }, [pathname]);
 
     return (
         <Grid
