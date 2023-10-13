@@ -41,3 +41,5 @@
 
 -   Simple web crawler and web scraper specifically written for medium.com articles. The crawler will begin with the user specified webpage and crawl to all other links on that page. The scraper will attempt to retrieve the following information: article's title, link, number of words in the article, number of "claps", and plain text of the article.
 -   [GitHub Repository](https://github.com/jiangs11/medium.com-WebScraper)
+
+&nbsp;

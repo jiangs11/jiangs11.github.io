@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.a30fff1b.js",
+    "main.js": "/static/js/main.056b6358.js",
     "static/media/favicon.gif": "/static/media/favicon.5c0ef7e6ce3477bb7767.gif",
     "static/media/Jiang_Resume.pdf": "/static/media/Jiang_Resume.872230812c4a26611b3a.pdf",
     "index.html": "/index.html",
-    "main.a30fff1b.js.map": "/static/js/main.a30fff1b.js.map"
+    "main.056b6358.js.map": "/static/js/main.056b6358.js.map"
   },
   "entrypoints": [
-    "static/js/main.a30fff1b.js"
+    "static/js/main.056b6358.js"
   ]
 }
