@@ -6,6 +6,7 @@ import { VscFiles, VscSettingsGear } from "react-icons/vsc";
 import { BiGitBranch } from "react-icons/bi";
 import Divider from "@mui/material/Divider";
 import { links } from "../pages/links";
+import resumePDF from "../../static/Jiang_Resume.pdf";
 
 interface Props {
     expanded: boolean;
@@ -68,7 +69,11 @@ export default function Sidebar({
                         <VscFiles />
                     </Box>
                 </Box>
-                <Tooltip title="Source of this project" arrow placement="right">
+                <Tooltip
+                    title="Original source of this project"
+                    arrow
+                    placement="right"
+                >
                     <Link
                         target="_blank"
                         href={
@@ -109,7 +114,11 @@ export default function Sidebar({
                     >
                         <Link
                             target="_blank"
-                            href={link.href}
+                            href={
+                                link.title.includes("Resume")
+                                    ? resumePDF
+                                    : link.href
+                            }
                             underline="none"
                             color="inherit"
                             sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
@@ -187,7 +196,6 @@ export default function Sidebar({
                     }}
                     display="flex"
                     justifyContent="center"
-                    onClick={() => alert('Website template: \n https://github.com/noworneverev/react-vscode-portfolio')}
                 >
                     <Box mt={0.7}>
                         <VscSettingsGear />

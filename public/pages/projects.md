@@ -27,6 +27,7 @@
 -   OddJobs is a service that will connect people who need help with small tasks with motivated people interested in an extra income! We intend for users to post requests for help with jobs such as moving a couch, picking up groceries, mowing the lawn, etc. Other users with free-time can negotiate the terms on filling the request.
 -   Frontend: HTML, CSS, Typescript, React
 -   Backend: Python, Flask, Google OAuth, MySQL
+-   [GitHub Repository](https://github.com/jiangs11/Senior-Project-F20)
 -   [YouTube Demo](https://www.youtube.com/watch?v=bv3de-OYx8I&ab_channel=anttesoriero)
 
 ## University Course Scheduler
