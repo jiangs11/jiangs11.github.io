@@ -54,6 +54,12 @@ export default function Home({ setSelectedIndex }: Props) {
                             display="flex"
                             justifyContent={{ xs: "center", sm: "flex-start" }}
                         >
+                            <Typography variant="h3">江 巍</Typography>
+                        </Grid>
+                        <Grid
+                            display="flex"
+                            justifyContent={{ xs: "center", sm: "flex-start" }}
+                        >
                             <Typography variant="subtitle1" gutterBottom>
                                 Junior Software Engineer
                             </Typography>
