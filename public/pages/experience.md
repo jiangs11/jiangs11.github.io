@@ -6,12 +6,12 @@
 <img src="../images/IDT-Logo.jpg" alt="IDT-Logo" width="150" height="80" style="object-fit: contain" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-**Associate Software Engineer** @ [Innovative Defense Technologies](https://idtus.com/)
+**Software Engineer II** @ [Innovative Defense Technologies](https://idtus.com/)
 Mount Laurel, New Jersey
 
 </div>
 
-📅 _December 2021 - Present_
+📅 _December 2021 - May 2025_
 
 -   Working on various government-funded and commercial contracts to design, develop, and deliver optimal solutions to our customers.
 -   Develop and integrate new software features into complex, full-functional, automated test systems.
