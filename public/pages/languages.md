@@ -1,4 +1,4 @@
 ## Languages
 
 **English**: Native
-**Chinese**: Very Fluent
+**Chinese**: Fluent
