@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import React, { useEffect } from "react";
 import favicon from "../../static/favicon.gif";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import { links } from "./links";
 import resumePDF from "../../static/Jiang_Resume.pdf";
 

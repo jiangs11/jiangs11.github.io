@@ -99,7 +99,7 @@ function MarkdownH2(props: { children: ReactNode }) {
 
 export default function MDContainer({ path }: Props) {
     const [content, setContent] = useState("");
-    const { pathname } = useLocation();
+    // const { pathname } = useLocation();
     useEffect(() => {
         fetch(path)
             .then((res) => res.text())
