@@ -41,7 +41,7 @@ Glassboro, New Jersey
 <img src="../images/FuturFits-Logo.jpg" alt="FuturFits-Logo" width="150" height="80" style="object-fit: cover" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-**Full Stack Intern** @ [FuturFits](https://chrome.google.com/webstore/detail/futurfits/lbijjbmhbdcmgohdcppmpgamaopncbig)
+**Full Stack Developer Intern** @ [FuturFits](https://chrome.google.com/webstore/detail/futurfits/lbijjbmhbdcmgohdcppmpgamaopncbig)
 Glassboro, New Jersey
 
 </div>
@@ -57,6 +57,23 @@ Glassboro, New Jersey
 # Other Experience
 
 <br>
+
+<div style="display: flex;">
+<img src="../images/Rowan-Logo.png" alt="Rowan-Logo" width="150" height="80" style="" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+**Computer Science Learning Assistant / Tutor** @ [Rowan University](https://csm.rowan.edu/departments/cs/)
+Glassboro, New Jersey
+
+</div>
+
+📅 _September 2019 - May 2021_
+
+-   Served as a peer, student-centered learning assistant and tutor with direct focus on facilitating student learning in the classroom lab environment.
+-   Provided students with additional resources and engaged students in critical thinking to solve problems.
+-   Explained introductory programming as well as object-oriented concepts to students.
+
+&nbsp;
 
 <div style="display: flex;">
 <img src="../images/BMS-Logo.jpg" alt="BMS-Logo" width="150" height="80" style="object-fit: cover" />
