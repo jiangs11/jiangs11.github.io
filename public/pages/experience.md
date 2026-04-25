@@ -3,6 +3,20 @@
 <br>
 
 <div style="display: flex;">
+<img src="../images/Recruitifi-Logo.png" alt="Recruitifi-Logo" width="150" height="80" style="object-fit: contain" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+**Software Engineer** @ [Recruitifi](https://www.recruitifi.com/)
+Remote, New Jersey
+
+</div>
+
+📅 _March 2026 - Present_
+
+
+&nbsp;
+
+<div style="display: flex;">
 <img src="../images/IDT-Logo.jpg" alt="IDT-Logo" width="150" height="80" style="object-fit: contain" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
